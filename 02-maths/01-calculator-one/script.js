@@ -14,17 +14,37 @@
 
     document.getElementById("addition").addEventListener("click", function() {
         // perform an addition
+        var x = Number(document.getElementById("op-one").value);
+        var y = Number(document.getElementById("op-two").value);
+        var result = x + y;
+       // Why doesn't this work --> var result = Number(document.getElementById("op-one").value + document.getElementById("op-two").value);
+        alert(result);
     });
 
     document.getElementById("substraction").addEventListener("click", function() {
         // perform an substraction
+        var x = Number(document.getElementById("op-one").value);
+        var y = Number(document.getElementById("op-two").value);
+        var result = x - y;
+
+        alert(result);
     });
 
     document.getElementById("multiplication").addEventListener("click", function() {
         // perform an multiplication
+        var x = Number(document.getElementById("op-one").value);
+        var y = Number(document.getElementById("op-two").value);
+        var result = x * y;
+
+        alert(result);
     });
 
     document.getElementById("division").addEventListener("click", function() {
         // perform an division
+        var x = Number(document.getElementById("op-one").value);
+        var y = Number(document.getElementById("op-two").value);
+        var result = x / y;
+
+        alert(result);
     });
 })();
