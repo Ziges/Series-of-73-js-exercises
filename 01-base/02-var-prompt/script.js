@@ -11,6 +11,11 @@
 
 (function() {
 
+
+    var userName = prompt ("What is your name?");
+
+    window.alert ("hello, " + userName + "!");
+
     // your code here
 
 })();

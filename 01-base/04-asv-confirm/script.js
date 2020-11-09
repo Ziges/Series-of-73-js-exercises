@@ -10,7 +10,26 @@
 // You will have time to focus on it later.
 
 (function() {
-
     // your code here
+
+       var age = prompt("your age?");
+       var gender = prompt("male or female?");
+       var town = prompt("town in which you live?");
+
+    var responses = window.alert("Please confirm your responses - age: " + age + ", gender: " + gender + ", town: " + town);
+
+    var confirm = prompt("Do you confirm?");
+
+    if (confirm != "yes")
+    {
+        // return false;
+        return age;
+        return gender;
+        return town;
+        return responses;
+        return confirm;
+    }
+
+    return true;
 
 })();
