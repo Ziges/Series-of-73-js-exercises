@@ -9,15 +9,15 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
-    document.getElementById("run").addEventListener("click", function() {
+    document.getElementById("run").addEventListener("click", function () {
 
         // your code here
-for (var i = 1; i < 21; i++){
-    if (Math.pow(i, 2) < 21 ){
-        console.log(Math.pow(i, 2));
-    }
+        for (var i = 1; i < 21; i++) {
+            if (Math.pow(i, 2) < 21) {
+                console.log(Math.pow(i, 2));
+            }
         }
     });
 

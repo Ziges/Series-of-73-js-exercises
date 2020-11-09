@@ -16,7 +16,24 @@
     document.getElementById("run").addEventListener("click", function() {
 
         // your code here
+        var stringNumbers = document.getElementById("numbers").value;
 
+        //converts string of numbers to array of numbers:
+        var array = stringNumbers.split(',').map(Number);
+
+        //variable to temporarily hold other variables in order to swap them
+        var swap;
+
+        for (var i = 0; i < array.length; i++)
+        {
+            if (array[i] > array[i + 1])
+            {
+                swap = array[i];
+                array[i] = array[i+1];
+                array[i+1] = swap;
+            }
+        }
+        alert(array);
     });
 
 })();
