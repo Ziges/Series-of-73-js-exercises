@@ -14,6 +14,30 @@
 
     const performOperation = operation => {
         // perform the operation
+
+        let operand = document.getElementsByClassName("operator").innerHTML;
+
+        let x = Number(document.getElementById("op-one").value);
+        let y = Number(document.getElementById("op-two").value);
+
+        switch(operand)
+        {
+            case "+":
+                console.log(x+y);
+                break;
+            case "-":
+                console.log(x-y);
+                break;
+            case "*":
+                console.log(x*y);
+                break;
+            case "/":
+                console.log(x/y);
+                break;
+            default:
+                alert("I don't know this operand.");
+                break;
+        }
     };
 
     Array.from(document.querySelectorAll("button.operator")).forEach($btn =>
