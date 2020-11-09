@@ -15,24 +15,31 @@
     const performOperation = operation => {
         // perform the operation
 
-        let operand = document.getElementsByClassName("operator").innerHTML;
+        var operand = document.getElementsById(innerHTML);
 
-        let x = Number(document.getElementById("op-one").value);
-        let y = Number(document.getElementById("op-two").value);
+
+        // Check met console log: wat zit er in je operand variabele? Klopt dat? Is het van hetzelfde datatype als waarmee je vergelijkt?
+
+        var x = Number(document.getElementById("op-one").value);
+        var y = Number(document.getElementById("op-two").value);
 
         switch(operand)
         {
             case "+":
-                console.log(x+y);
+                var result = x + y;
+                console.log(result);
                 break;
             case "-":
-                console.log(x-y);
+                var result = x - y;
+                console.log(result);
                 break;
             case "*":
-                console.log(x*y);
+                var result = x * y;
+                console.log(result);
                 break;
             case "/":
-                console.log(x/y);
+                var result = x / y;
+                console.log(result);
                 break;
             default:
                 alert("I don't know this operand.");

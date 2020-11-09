@@ -14,7 +14,13 @@
     document.getElementById("run").addEventListener("click", function() {
 
         // your code here
-
+for (var i = 1; i < 21; i++){
+    if (Math.pow(i, 2) < 21 ){
+        console.log(Math.pow(i, 2));
+    }
+        }
     });
 
 })();
+
+
