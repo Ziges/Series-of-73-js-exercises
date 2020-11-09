@@ -9,11 +9,11 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
     // to get the value of an input: document.getElementById("element-id").value
 
-    document.getElementById("run").addEventListener("click", function() {
+    document.getElementById("run").addEventListener("click", function () {
 
         // your code here
         var stringNumbers = document.getElementById("numbers").value;
@@ -24,13 +24,11 @@
         //variable to temporarily hold other variables in order to swap them
         var swap;
 
-        for (var i = 0; i < array.length; i++)
-        {
-            if (array[i] > array[i + 1])
-            {
+        for (var i = 0; i < array.length; i++) {
+            if (array[i] > array[i + 1]) {
                 swap = array[i];
-                array[i] = array[i+1];
-                array[i+1] = swap;
+                array[i] = array[i + 1];
+                array[i + 1] = swap;
             }
         }
         alert(array);
