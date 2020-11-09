@@ -12,24 +12,14 @@
 (function() {
     // your code here
 
-       var age = prompt("your age?");
-       var gender = prompt("male or female?");
-       var town = prompt("town in which you live?");
+    var response = false;
 
-    var responses = window.alert("Please confirm your responses - age: " + age + ", gender: " + gender + ", town: " + town);
-
-    var confirm = prompt("Do you confirm?");
-
-    if (confirm != "yes")
+    while (response === false)
     {
-        // return false;
-        return age;
-        return gender;
-        return town;
-        return responses;
-        return confirm;
+        var age = prompt("your age?");
+        var gender = prompt("male or female?");
+        var town = prompt("town in which you live?");
+        var response = confirm("Please confirm your responses - age: " + age + ", gender: " + gender + ", town: " + town);
     }
-
-    return true;
 
 })();
