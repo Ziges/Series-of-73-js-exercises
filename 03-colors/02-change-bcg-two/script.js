@@ -10,6 +10,13 @@
 // You will have time to focus on it later.
 
 (function() {
+    // to get the value of an input: document.getElementById("element-id").value
     // your code here
+
+    document.getElementById("run").addEventListener("click", function() {
+        // change color dynamically
+        var inputText = document.getElementById("color").value;
+        document.body.style.backgroundColor = inputText;
+    });
 
 })();
