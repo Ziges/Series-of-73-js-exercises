@@ -11,6 +11,15 @@
 
 (function() {
 
+    // to get the value of an input: document.getElementById("element-id").value
     // your code here
+
+    document.getElementById("run").addEventListener("click", function() {
+        // change color dynamically
+
+        var randomRgbNumber = Math.floor(Math.random()*16777215).toString(16);
+
+        document.body.style.backgroundColor = "#" + randomRgbNumber;
+    });
 
 })();
