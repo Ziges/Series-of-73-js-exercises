@@ -9,17 +9,36 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
     // to get the value of an input: document.getElementById("element-id").value
     // your code here
 
-    document.getElementById("run").addEventListener("click", function() {
+    document.getElementById("run").addEventListener("click", function () {
         // change color dynamically
 
-        var randomRgbNumber = Math.floor(Math.random()*16777215).toString(16);
+        var randomRgbNumber = Math.floor(Math.random() * 16777215).toString(16);
 
         document.body.style.backgroundColor = "#" + randomRgbNumber;
     });
 
-})();
+
+    // or
+    //
+    // function randomColor() {
+    //
+    //     const hexCode = "0123456789ABCDEF";
+    //     let color = "#";
+    //     for (let i = 0; i < 6; i++) {
+    //         color = color + hexCode[Math.floor(Math.random() * 16)];
+    //     }
+    //     return color;
+    //
+    // }
+    //
+    // document.getElementById("run").addEventListener("click", function () {
+    //
+    //     document.body.style.backgroundColor = randomColor();
+
+
+    })();
