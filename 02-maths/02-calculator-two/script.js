@@ -20,8 +20,7 @@
         var x = Number(document.getElementById("op-one").value);
         var y = Number(document.getElementById("op-two").value);
 
-        switch(operation)
-        {
+        switch (operation) {
             case "addition":
                 var result = x + y;
                 console.log(result);

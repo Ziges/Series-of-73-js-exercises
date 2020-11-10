@@ -22,4 +22,15 @@
         var response = confirm("Please confirm your responses - age: " + age + ", gender: " + gender + ", town: " + town);
     }
 
+    // var age = prompt("your age?");
+    // var gender = prompt("male or female?");
+    // var town = prompt("town in which you live?");
+    // var response = confirm("Please confirm your responses - age: " + age + ", gender: " + gender + ", town: " + town);
+    //
+    // if (response == false) {
+    // recall the function above - give it a name in that case.
+    // }
+    //
+    //
+
 })();
