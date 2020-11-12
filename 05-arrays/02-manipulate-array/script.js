@@ -26,4 +26,21 @@
 
     // your code here
 
+    // Using delete may leave undefined holes in the array. Use pop() or shift() instead.
+
+
+    document.getElementById("run").addEventListener("click", function () {
+        // your code here
+        fruits.shift();            // Removes the first element "banana" from fruits
+        console.log(fruits);
+
+        fruits.pop();              // Removes the last element ("cerise") from fruits
+        console.log(fruits);
+
+        fruits.unshift ("Banana");    // Adds a new element "Lemon" to fruits at beginning
+        console.log(fruits);
+
+        fruits.push("Kiwi");       //  Adds a new element ("Kiwi") to fruits at the end
+        console.log(fruits);
+    });
 })();
