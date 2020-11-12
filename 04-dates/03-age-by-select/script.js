@@ -9,7 +9,7 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
     // your code here
 
@@ -17,21 +17,21 @@
 
         // your code here
 
-    let birthYear = Number(document.getElementById("dob-year").value);
-    let birthMonth = Number(document.getElementById("dob-month").value);
-    let birthDay = Number(document.getElementById("dob-day").value);
+        let birthYear = Number(document.getElementById("dob-year").value);
+        let birthMonth = Number(document.getElementById("dob-month").value);
+        let birthDay = Number(document.getElementById("dob-day").value);
 
-    //convert months to years
-    let months = (birthMonth / 12);
+        //convert months to years
+        let months = (birthMonth / 12);
 
-    //convert days to years
-    let days = birthDay / 365;
+        //convert days to years
+        let days = birthDay / 365;
 
-    let total = birthYear + months + days;
+        let total = birthYear + months + days;
 
-    console.log(total);
+        console.log(total);
 
-    //snippet to calculate day of year
+        //snippet to calculate day of year
         var now = new Date();
         var start = new Date(now.getFullYear(), 0, 0);
         var diff = (now - start) + ((start.getTimezoneOffset() - now.getTimezoneOffset()) * 60 * 1000);
@@ -40,15 +40,15 @@
         //convert day to years
         let currentDays = day / 365;
 
-    let currentYearAndDays = new Date().getFullYear() + currentDays;
+        let currentYearAndDays = new Date().getFullYear() + currentDays;
 
-    console.log(currentYearAndDays);
+        console.log(currentYearAndDays);
 
-    let age = Math.floor(currentYearAndDays - total);
+        let age = Math.floor(currentYearAndDays - total);
         console.log(age);
 
-    alert('you are ' + age + ' years old.');
+        alert('you are ' + age + ' years old.');
 
-});
+    });
 
 })();

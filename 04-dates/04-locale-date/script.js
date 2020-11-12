@@ -12,7 +12,13 @@
 (function() {
 
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
-
     // your code here
+
+    let today = new Date();
+    let fullDate = today.getDay() + " " + today.getDate() + " " + today.getMonth() + " " + today.getFullYear() + ", " + today.getHours() + "h" + today.getMinutes();
+
+    console.log(fullDate);
+
+    document.getElementById("target").innerHTML = fullDate;
 
 })();
