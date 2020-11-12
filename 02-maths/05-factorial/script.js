@@ -11,19 +11,42 @@
 
 (function () {
 
-    // to get the value of an input: document.getElementById("element-id").value
-
-    document.getElementById("run").addEventListener("click", function () {
+    document.getElementById("run").addEventListener("click", function() {
 
         // your code here
-        var n = document.getElementById("number").value;
 
-        var x = 1;
-        while (n > 1) {
-            x *= n;
-            n--;
+        var a = Number(document.getElementById("number").value);
+        var c = 1;
+
+        if (a == 0 || a == 1){
+
+            alert("ERROR");
+
+        } else {
+
+            for ( let i = a; i > 0; i--){
+
+                c = c*i;
+                console.log(c);
+            }
+            //outside of your loop, but still inside the else statement!
+            // console.log(c);
         }
-        alert(x);
+
+
+        // to get the value of an input: document.getElementById("element-id").value
+
+    // document.getElementById("run").addEventListener("click", function () {
+    //
+    //     // your code here
+    //     var n = document.getElementById("number").value;
+    //
+    //     var x = 1;
+    //     while (n > 1) {
+    //         x *= n;
+    //         n--;
+    //     }
+    //     alert(x);
 
         //or
 
