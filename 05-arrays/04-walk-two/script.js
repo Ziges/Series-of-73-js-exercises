@@ -27,5 +27,10 @@
     ];
 
     // your code here
-
+    document.getElementById("run").addEventListener("click", function () {
+        // your code here
+        fruits.forEach(function (item) {
+            console.log(item);
+        });
+    });
 })();
