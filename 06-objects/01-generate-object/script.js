@@ -11,4 +11,18 @@
 
 (() => {
     // your code here
+    var me = {
+        lastname: "szygo",
+        firstname: "dim",
+        age: "35",
+        city: "gent",
+        country: "bel"
+    }
+
+    document.getElementById("run").addEventListener("click", function () {
+        // your code here
+        console.log(me);
+    });
+
+
 })();

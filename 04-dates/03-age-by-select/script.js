@@ -17,37 +17,61 @@
 
         // your code here
 
-        let birthYear = Number(document.getElementById("dob-year").value);
-        let birthMonth = Number(document.getElementById("dob-month").value);
-        let birthDay = Number(document.getElementById("dob-day").value);
+        let day = Number(document.getElementById("dob-day").value);
+        let month = Number(document.getElementById("dob-month").value) - 1;
+        let year = Number(document.getElementById("dob-year").value);
 
-        //convert months to years
-        let months = (birthMonth / 12);
+        let today = new Date();
+        let yearToday = today.getFullYear();
+        let monthToday = today.getMonth();
+        let dayToday = today.getDate();
 
-        //convert days to years
-        let days = birthDay / 365;
+        let age = yearToday - year;
 
-        let total = birthYear + months + days;
+        if (month >= monthToday && day > dayToday) {
+            age = age - 1 ;
+        }
 
-        console.log(total);
+        else if (month > monthToday) {
+            age = age - 1 ;
+        }
 
-        //snippet to calculate day of year
-        var now = new Date();
-        var start = new Date(now.getFullYear(), 0, 0);
-        var diff = (now - start) + ((start.getTimezoneOffset() - now.getTimezoneOffset()) * 60 * 1000);
-        var oneDay = 1000 * 60 * 60 * 24;
-        var day = Math.floor(diff / oneDay);
-        //convert day to years
-        let currentDays = day / 365;
+        alert("You are " + age + " years old.");
+        // your code here
 
-        let currentYearAndDays = new Date().getFullYear() + currentDays;
-
-        console.log(currentYearAndDays);
-
-        let age = Math.floor(currentYearAndDays - total);
-        console.log(age);
-
-        alert('you are ' + age + ' years old.');
+        //
+        // let birthYear = Number(document.getElementById("dob-year").value);
+        // let birthMonth = Number(document.getElementById("dob-month").value);
+        // let birthDay = Number(document.getElementById("dob-day").value);
+        //
+        // //convert months to years
+        // let months = (birthMonth / 12);
+        //
+        // //convert days to years
+        // let days = birthDay / 365;
+        //
+        // let total = birthYear + months + days;
+        //
+        // console.log(total);
+        //
+        // //snippet to calculate day of year
+        // var now = new Date();
+        // var start = new Date(now.getFullYear(), 0, 0);
+        // var diff = (now - start) + ((start.getTimezoneOffset() - now.getTimezoneOffset()) * 60 * 1000);
+        // var oneDay = 1000 * 60 * 60 * 24;
+        // var day = Math.floor(diff / oneDay);
+        //
+        // //convert day to years
+        // let currentDays = day / 365;
+        //
+        // let currentYearAndDays = new Date().getFullYear() + currentDays;
+        //
+        // console.log(currentYearAndDays);
+        //
+        // let age = Math.floor(currentYearAndDays - total);
+        // console.log(age);
+        //
+        // alert('you are ' + age + ' years old.');
 
     });
 

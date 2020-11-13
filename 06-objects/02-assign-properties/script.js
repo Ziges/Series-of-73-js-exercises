@@ -27,4 +27,27 @@
         user: null,
     };
     // your code here
+
+    document.getElementById("run").addEventListener("click", function () {
+        // your code here
+
+        //a forEach doesn't work here below because the element in a forEach function is a copy, not a reference.
+        // so if item is assigned as per below it wouldn't affect the array. With a for loop we don't have this problem.
+        // computers.forEach(function (item) {
+        //     item = { ...defaultProps, ...item }; OR Object.assign(computers, defaultProps);
+        // });
+
+        //merge objects using Object.assign for every index[i] in computers
+        for (let i = 0; i < computers.length; i++){
+            var newObj = new Object();
+            Object.assign(newObj, defaultProps);
+            Object.assign(newObj, computers[i]);
+            computers[i] = newObj;
+        }
+        console.log(computers);
+    });
 })();
+
+// in uw code ging hij de defaultprops in een element van computers steken.
+// Dus heb ik gewoon een newObj gemaakt eerst daar defaultprops aan toegevoegd en daarna het computers element.
+// Dan assign je dat aan computers[i] (overschrijf je het element).
