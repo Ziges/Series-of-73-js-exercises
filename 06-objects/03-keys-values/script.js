@@ -19,4 +19,13 @@
         status: "married",
     };
     // your code here
+    document.getElementById("run").addEventListener("click", function () {
+    // Object.values() converts an object to an array.
+    console.log(Object.values(person));
+
+    // Object.getOwnPropertyNames() method returns an array of all properties found directly in a given object.
+    console.log(Object.getOwnPropertyNames(person));
+    //OR
+    console.log(Object.keys(person));
+    });
 })();

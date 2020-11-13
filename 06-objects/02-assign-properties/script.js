@@ -38,7 +38,7 @@
         // });
 
         //merge objects using Object.assign for every index[i] in computers
-        for (let i = 0; i < computers.length; i++){
+        for (let i = 0; i < computers.length; i++) {
             var newObj = new Object();
             Object.assign(newObj, defaultProps);
             Object.assign(newObj, computers[i]);
