@@ -13,4 +13,27 @@
 
     // your code here
 
+    document.getElementById("run").addEventListener("click", function () {
+
+        let today = new Date(); //the date object
+
+        // ADD WEEK DAYS IN AN ARRAY.
+        let weekday = ['Sunday', 'Monday', 'Tuesday',
+            'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+        // ADD MONTHS IN AN ARRAY.
+        let months = ['January', 'February', 'March',
+            'April', 'May', 'June', 'July', 'August',
+            'September', 'October', 'November', 'December'];
+
+        // for a given year
+
+        console.log(today);
+
+        // if (weekday[today.getDay()] == 'Friday' && today.getDate() == 13) {
+        //     alert(months[today.getMonth()]);
+        // }
+
+    });
+
 })();

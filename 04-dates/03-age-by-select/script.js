@@ -15,8 +15,6 @@
 
     document.getElementById("run").addEventListener("click", function () {
 
-        // your code here
-
         let day = Number(document.getElementById("dob-day").value);
         let month = Number(document.getElementById("dob-month").value) - 1;
         let year = Number(document.getElementById("dob-year").value);
@@ -37,41 +35,12 @@
         }
 
         alert("You are " + age + " years old.");
-        // your code here
 
-        //
-        // let birthYear = Number(document.getElementById("dob-year").value);
-        // let birthMonth = Number(document.getElementById("dob-month").value);
-        // let birthDay = Number(document.getElementById("dob-day").value);
-        //
-        // //convert months to years
-        // let months = (birthMonth / 12);
-        //
-        // //convert days to years
-        // let days = birthDay / 365;
-        //
-        // let total = birthYear + months + days;
-        //
-        // console.log(total);
-        //
-        // //snippet to calculate day of year
-        // var now = new Date();
-        // var start = new Date(now.getFullYear(), 0, 0);
-        // var diff = (now - start) + ((start.getTimezoneOffset() - now.getTimezoneOffset()) * 60 * 1000);
-        // var oneDay = 1000 * 60 * 60 * 24;
-        // var day = Math.floor(diff / oneDay);
-        //
-        // //convert day to years
-        // let currentDays = day / 365;
-        //
-        // let currentYearAndDays = new Date().getFullYear() + currentDays;
-        //
-        // console.log(currentYearAndDays);
-        //
-        // let age = Math.floor(currentYearAndDays - total);
-        // console.log(age);
-        //
-        // alert('you are ' + age + ' years old.');
+
+
+        // The age of someone is the time difference between their birth date and now (to be very technical)
+        // So if you find a way to get that difference, you're halfway there. Next step is to convert that to amount of years and that will give you someone's age.
+
 
     });
 
