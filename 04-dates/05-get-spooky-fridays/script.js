@@ -15,7 +15,8 @@
 
     document.getElementById("run").addEventListener("click", function () {
 
-        let today = new Date(); //the date object
+        let today = new Date();
+        let year = new Date().getFullYear(); //the date object
 
         // ADD WEEK DAYS IN AN ARRAY.
         let weekday = ['Sunday', 'Monday', 'Tuesday',
@@ -26,13 +27,14 @@
             'April', 'May', 'June', 'July', 'August',
             'September', 'October', 'November', 'December'];
 
-        // for a given year
+        // let fullDate = weekday[year.getDay()] + " " + year.getDate() + " " + months[today.getMonth()] + " " + today.getFullYear() + ", " + today.getHours() + "h" + today.getMinutes();
 
-        console.log(today);
 
-        // if (weekday[today.getDay()] == 'Friday' && today.getDate() == 13) {
-        //     alert(months[today.getMonth()]);
-        // }
+        // for a given year, loop through every day of that year, so 365 times
+
+        if (weekday[today.getDay()] == 'Friday' && today.getDate() == 13) {
+            alert(months[today.getMonth()]);
+        }
 
     });
 
