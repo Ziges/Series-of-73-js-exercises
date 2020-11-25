@@ -30,8 +30,5 @@
         if (i === gallery.length) {
             i = 0;
         }
-
     });
-
-
 })();
