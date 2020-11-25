@@ -11,14 +11,27 @@
 
 (function() {
 
-    var gallery= [
+    var gallery = [
         "../../_shared/img/bell.svg",
         "../../_shared/img/clock.svg",
         "../../_shared/img/compass.svg",
         "../../_shared/img/lemon.svg",
         "../../_shared/img/map.svg",
     ];
-
     // your code here
+
+    let image = document.querySelector('img');
+
+    let i = 1;
+
+    document.getElementById('next').addEventListener("click", function (){
+        image.src = gallery[i];
+        i++;
+        if (i === gallery.length) {
+            i = 0;
+        }
+
+    });
+
 
 })();
