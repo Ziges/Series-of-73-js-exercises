@@ -21,11 +21,11 @@
    target.appendChild(tbl);
 
     // creating all cells
-    for (let i = 0; i < 10; i++) {
+    for (let i = 1; i < 11; i++) {
         // creates a table row
         let row = document.createElement("tr");
 
-        for (let j = 0; j < 1; j++) {
+        for (let j = 1; j < 2; j++) {
             // Create a <td> element and a text node, make the text
             // node the contents of the <td>, and put the <td> at
             // the end of the table row
