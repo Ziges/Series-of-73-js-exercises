@@ -12,5 +12,14 @@
 (function() {
 
     // your code here
+    let pw1 = document.getElementById('pass-one');
+    let pw2 = document.getElementById('pass-two');
 
+    document.getElementById('run').addEventListener("click", function (){
+        if(pw1.value !== pw2.value){
+            // how to check if this works?
+            document.getElementById("pass-one").classList.add("error");
+            document.getElementById("pass-two").classList.add("error");
+        }
+    })
 })();
