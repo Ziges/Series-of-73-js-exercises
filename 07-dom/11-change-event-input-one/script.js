@@ -12,5 +12,19 @@
 (function() {
 
     // your code here
+    // https://htmldom.dev/count-the-number-of-characters-of-a-textarea/
 
+    const messageEle = document.getElementById('pass-one');
+    const counterEle = document.getElementById('counter');
+
+    messageEle.addEventListener('input', function(e) {
+        const target = e.target;
+
+        // Get the `maxlength` attribute
+        const maxLength = target.getAttribute('maxlength');
+
+        // Count the current number of characters
+        const currentLength = target.value.length;
+        counterEle.innerHTML = `${currentLength}/${maxLength}`;
+    });
 })();
