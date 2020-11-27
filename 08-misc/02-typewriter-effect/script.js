@@ -12,5 +12,20 @@
 (function() {
 
     // your code here
+    let i = 0;
+    let text = document.getElementById("target").innerHTML;
+    target.innerHTML = ' ';
+    let speed =  50;  /* The speed/duration of the effect in milliseconds */
+    let delay = 30;
+
+    function typeWriter() {
+        if (i < text.length) {
+            target.innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed, delay);
+        }
+    }
+    typeWriter();
+
 
 })();
